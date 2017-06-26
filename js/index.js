@@ -20,13 +20,18 @@ document.write(resultNunber);
      return result;
      }
     else
+    if(d>0)
     {
      x1=(-b+Math.sqrt(d))/(2*a);
      x2=(-b-Math.sqrt(d))/(2*a);
      result ='Рівняння має 2 корені: x1=' +x1+',' +'x2=' +x2;
      return result;
+}else{
+ result ='Рівняння  не має дійсних коренів';
+     return result;
 }
 }
+
 //else{ 
 //    var n =b-c ;
 //  return n;
